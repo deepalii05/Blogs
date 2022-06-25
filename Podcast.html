@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale= "1.0">
+    <title> Welcome to My web-page </title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <style>
+
+*{
+  overflow-x: hidden;
+  margin: 0px;
+}
+
+body {
+  width: 100%;
+}
+
+.video{
+  background-color: #DFF7F0;
+  padding: 1% 15% 1% 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-left, .blogs-right, .podcast-top {
+  margin: auto;
+  width: 50%;
+  font-size: 70px;
+  padding: 10px;
+}
+
+.video-left h3 {
+  text-align: right;
+  color: #10403B;
+}
+
+.video-right {
+  display: grid;
+  padding: 2%;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.video-link {
+  overflow: hidden;
+}
+
+.podcast {
+  background-color: #DFF7F0;
+  padding: 3% 0% 10% 0%;
+}
+
+.podcast-top h3 {
+  text-align: center;
+  color: #10403B;
+}
+
+.podcast-down {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2%;
+}
+
+.card {
+  position: relative;
+  width: 220px;
+  height: 200px;
+  background: #10403B;
+  border-radius: 20px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.card:hover{
+  height: 250px;
+}
+
+.image {
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 120px;
+  background: #000;
+  z-index: 5;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card:hover .image {
+  width: 200px;
+  height: 170px;
+}
+
+.image image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px #DFF7F0;
+}
+
+.card .title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  bottom: 0px;
+  z-index: 10;
+  padding: 3%;
+}
+
+.card .title a {
+  text-decoration: none;
+  color: #DFF7F0;
+}
+
+.card .title h4 {
+  font-size: 25px;
+  text-align: center;
+  place-items: center;
+}
+
+.card .title p {
+  font-size: 15px;
+  text-align: center;
+  place-items: center;
+  color: #DFF7F0;
+}
+        /* BLOG - CSS */
+        * {box-sizing: border-box;}
+                body {font-family: Verdana, sans-serif;}
+                .mySlides {display: none;}
+                img {vertical-align: middle;}
+
+                /*blog container*/
+                .blogs {
+                  background: url("static/Blog-bg.jpg");
+                  background-size: cover;
+                }
+                .blogs-right{
+                    width: 100%;
+                    /*background-color: rgba(51, 8, 6, 0.418);*/
+                    color: #DFF7F0;
+                    margin: 0%;
+                    text-align: right;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+                /*text below the images */
+                .blog-text{
+                    color: rgb(255, 255, 255);
+                    text-align: center;
+                    font-size: large;
+                }
+                /* Slideshow container */
+                .slideshow-container {
+                  max-width: 1000px;
+                  position: relative;
+                  margin: auto;
+                  /*margin-left: 60%;*/
+                }
+
+                /* Caption text */
+                .text {
+                  color: #f2f2f2;
+                  font-size: 15px;
+                  padding: 8px 12px;
+                  position: absolute;
+                  bottom: 8px;
+                  width: 100%;
+                  /*text-align: center;*/   
+                }
+
+                /* Number text (1/3 etc) */
+                .numbertext {
+                  color: #f2f2f2;
+                  font-size: 12px;
+                  padding: 8px 12px;
+                  position: absolute;
+                  top: 0;
+                }
+
+                /* The dots/bullets/indicators */
+                .dot {
+                  height: 15px;
+                  width: 15px;
+                  margin: 0 2px;
+                  background-color: #bbb;
+                  border-radius: 50%;
+                  display: inline-block;
+                  transition: background-color 0.6s ease;
+                }
+
+                .active {
+                  background-color: #717171;
+                }
+
+                /* Fading animation */
+                .fade {
+                  animation-name: fade;
+                  animation-duration: 1.5s;
+                  padding-left: 0.2%;
+                }
+
+                @keyframes fade {
+                  from {opacity: .4} 
+                  to {opacity: 1}
+                }
+
+                /* On smaller screens, decrease text size */
+                @media only screen and (max-width: 300px) {
+                  .text {font-size: 11px}
+}
+        /* END OF BLOG CSS */
+    </style>
+
+  </head>
+  <body>
+    <div class="video">
+      <div class="video-left"> <h3> Videos </h3> </div>
+      <div class="video-right">
+        <div class="video-link">
+          <iframe src="https://www.youtube.com/embed/pvM_TtQi9DU" title="YouTube video player"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-link">
+          <iframe src="https://www.youtube.com/embed/Yk5BnSwTmrk" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-link">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/F8_A_01U0ng" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-link">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/G6RzZ4KzsEs" title="YouTube video player"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="blogs">
+        <div class="blogs-left"> </div>
+        <div class="blogs-right"> <h3> Blogs </h3></div>
+        <div class="slideshow-container">
+  
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 10</div>
+            <img src="static/M1.jpg" style="width:45px height: 30px;">
+            <br>
+            <div class="blog-text">Professors Who Acknowledged My Worth ~  <a href="https://themighty.com/2016/11/mental-illness-a-thank-you-letter-to-my-professors/"><h7>  Read Blog</h7></a></div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 10</div>
+            <img src="static/M2.jpg" style="width:45px height: 30px;">
+            <br>
+            <div class="blog-text">What is it like Living with Bipolar Disorder ~  <a href="https://www.amahahealth.com/blog/what-is-it-like-living-with-bipolar-disorder/"><h7>  Read Blog</h7></a></div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 10</div>
+            <img src="static/M3.jpg" style="width:45px height: 30px;">
+            <br>
+            <div class="blog-text">Coping with Grief ~  <a href="amahahealth.com/blog/coping-with-grief/"><h7>  Read Blog</h7></a></div>
+            
+          </div>
+         
+          <div class="mySlides fade">
+              <div class="numbertext">4 / 10</div>
+              <img src="static/M4.jpg" style="width:45px height: 30px;">
+              <br>
+              <div class="blog-text">Is It Time to See A Therapist? ~  <a href="https://www.amahahealth.com/blog/time-to-see-a-therapist/"><h7>  Read Blog</h7></a></div>
+             
+          </div>
+  
+          <div class="mySlides fade">
+              <div class="numbertext">5 / 10</div>
+              <img src="static/M5.png" style="width:45px height: 30px;">
+              <br>
+              <div class="blog-text">Gun Violence & Mental Health ~  <a href="https://www.nami.org/Blogs/From-the-CEO/June-2022/Gun-Violence-Mental-Health"><h7>  Read Blog</h7></a></div>
+           
+          </div>
+          
+          <div class="mySlides fade">
+              <div class="numbertext">6 / 10</div>
+              <img src="static/M6.jpg" style="width:45% height: 30px;">
+              <br>
+              <div class="blog-text">The Emotional Fallout of Physical Sports Injuries ~  <a href="https://bevoya.com/blog/emotional-fallout-acl-surgery"><h7>  Read Blog</h7></a></div>
+            
+          </div>
+          
+          <div class="mySlides fade">
+              <div class="numbertext">7 / 10</div>
+              <img src="static/M7.jpg" style="width:45px height: 30px;">
+              <br>
+              <div class="blog-text">A Splintered Mind ~  <a href="http://douglascootey.com/"><h7>  Read Blog</h7></a></div>
+             
+          </div>
+          
+          <div class="mySlides fade">
+              <div class="numbertext">8 / 10</div>
+              <img src="static/M8.jpg" style="width:45px height: 30px;">
+              <br>
+              <div class="blog-text">Consequences of Domestic Abuse on Women’s Mental Health ~  <a href="https://mpowerminds.com/blog/Consequences-of-Domestic-Abuse-on-Womens-Mental-Health"><h7>  Read Blog</h7></a></div>
+          </div>
+          
+          <div class="mySlides fade">
+              <div class="numbertext">9 / 10</div>
+              <img src="static/M9.jpg" style="width:45px height: 30px;">
+              <br>
+              <div class="blog-text">How does depression affect your physical health? ~  <a href="https://mpowerminds.com/blog/How-does-depression-affect-your-physical-health"><h7>  Read Blog</h7></a></div>
+          </div>
+          
+          <div class="mySlides fade">
+              <div class="numbertext">10 / 10</div>
+              <img src="static/M10.jpg" style="width:45px height: 30px;">
+              <br>
+              <div class="blog-text">Mental health conditions experienced by senior citizens or elderly ~  <a href="https://www.medanta.org/patient-education-blog/is-old-age-linked-to-increases-in-mental-health-issues/#:~:text=According%20to%20the%20World%20Health,the%20world's%20older%20population%2C%20respectively."><h7>  Read Blog</h7></a></div>
+          </div>
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          
+          <script>
+          let slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+          </script>
+      </div>
+
+    <div class="podcast">
+      <div class="podcast-top"> <h3> Podcasts </h3> </div>
+      <div class="podcast-down">
+        <div class="card">
+          <div class="image"> <img src="static/pic1.jpg"> </div>
+          <div class="title">
+            <div>
+              <a href ="https://open.spotify.com/">
+                <h4> Find Your Peace!! <br> </h4>
+              </a>
+              <p> 12 Episodes </p>
+             </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image"> <img src="static/pic2.jpg"> </div>
+          <div class="title">
+            <div>
+              <a href ="https://open.spotify.com/">
+                <h4> Glow and Grow!! <br> </h4>
+              </a>
+              <p> 20 Episodes </p>
+             </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image"> <img src="static/pic3.jpg"> </div>
+          <div class="title">
+            <div>
+              <a href ="https://open.spotify.com/">
+                <h4> All Fine? <br> </h4>
+              </a>
+              <p> 15 Episodes </p>
+             </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image"> <img src="static/pic4.png"> </div>
+          <div class="title">
+            <div>
+              <a href ="https://open.spotify.com/">
+                <h4> Happiness <br> </h4>
+              </a>
+              <p> 11 Episodes </p>
+             </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image"> <img src="static/pic5.jpg"> </div>
+          <div class="title">
+            <div>
+              <a href ="https://open.spotify.com/">
+                <h4> Are you okay? <br> </h4>
+              </a>
+              <p> 7 Episodes </p>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
